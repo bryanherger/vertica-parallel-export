@@ -7,8 +7,8 @@ There's a great writeup here: https://www.dbjungle.com/exporting-vast-amounts-of
 
 Or simply "make install" and look at the README.txt for the original directions.
 
-Some tests (using a 123M row table, run on 3-node cluster on AWS with EBS storage for local exports):
-(TL;DR local export slowest, ParallelExport faster, EXPORT TO PARQUET fastest)
+Some tests using a 123M row table, run on 3-node cluster on AWS with EBS storage for local exports
+(TL;DR local export slowest, ParallelExport faster, EXPORT TO PARQUET fastest):
 ```
 dbadmin=> select version();
 Vertica Analytic Database v10.1.0-2
